@@ -1,0 +1,17 @@
+{
+  "name": "create-r3f",
+  "version": "1.0.0",
+  "description": "",
+  "bin": {
+    "create-r3f": "index.js"
+  },
+  "keywords": ["r3f", "react", "three", "fiber", "cli", "vite", "template", "starter"],
+  "author": "Kristian Payne",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "degit": "^2.8.4",
+    "prompts": "^2.4.2"
+  }
+}
