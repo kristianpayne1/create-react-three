@@ -38,7 +38,6 @@ async function main() {
     const viteConfigPath = path.join(projectName, "vite.config.js");
     let viteConfigContent = fs.readFileSync(viteConfigPath, "utf-8");
 
-    // Use regex to find and update `base`
     viteConfigContent = viteConfigContent.replace(
         /base:\s*["'`](.*?)["'`]/,
         `base: "/${projectName}/"`
@@ -46,13 +45,12 @@ async function main() {
 
     fs.writeFileSync(viteConfigPath, viteConfigContent);
 
+    // Update README.md
     const readmePath = path.join(projectName, "README.md");
     const fileContent = fs.readFileSync(readmePath, 'utf8');
 
-    // Combine the new line with the existing content
     const updatedContent = `# ${projectName}\n\n${fileContent}`;
 
-    // Write the updated content back to the file
     fs.writeFileSync(readmePath, updatedContent, 'utf8');
 
     console.log(chalk.green("Done! Now run:"));
