@@ -1,4 +1,4 @@
-# create-r3f
+# create-react-three
 
 A CLI tool to quickly scaffold a new React Three Fiber project. Helping you to dive right into your next 3D endeavour!
 
@@ -7,7 +7,7 @@ A CLI tool to quickly scaffold a new React Three Fiber project. Helping you to d
 Simply run the command and follow the prompts:
 
 ```sh
-npx create-r3f
+npx create-react-three
 ```
 
 You will be prompted to enter a project name. Once confirmed, the script will:
