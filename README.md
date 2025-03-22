@@ -13,7 +13,7 @@ npx create-react-three
 You will be prompted to enter a project name. Once confirmed, the script will:
 
 1. Create the project folder
-2. Scaffold a R3F project (based on a [template](https://github.com/kristianpayne1/r3f-template))
+2. Scaffold a R3F project (based on the [template](https://github.com/kristianpayne1/r3f-template))
 3. Update `package.json` and `vite.config.js` with the given project name
 
 ### 📦 Installs
@@ -34,8 +34,6 @@ You will be prompted to enter a project name. Once confirmed, the script will:
 ### 🛠️ Requirements
 
 Node.js v18 or higher
-
-npm or yarn
 
 ### 🤝 Contributing
 
