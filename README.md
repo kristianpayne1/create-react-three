@@ -33,7 +33,7 @@ You will be prompted to enter a project name. Once confirmed, the script will:
 
 ### 🛠️ Requirements
 
-Node.js v14 or higher
+Node.js v18 or higher
 
 npm or yarn
 
