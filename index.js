@@ -46,6 +46,15 @@ async function main() {
 
     fs.writeFileSync(viteConfigPath, viteConfigContent);
 
+    const readmePath = path.join(projectName, "README.md");
+    const fileContent = fs.readFileSync(readmePath, 'utf8');
+
+    // Combine the new line with the existing content
+    const updatedContent = `# ${projectName}\n\n${fileContent}`;
+
+    // Write the updated content back to the file
+    fs.writeFileSync(readmePath, updatedContent, 'utf8');
+
     console.log(chalk.green("Done! Now run:"));
     console.log(chalk.blue(`cd ${projectName}`));
     console.log(chalk.blue("npm install"));
