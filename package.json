@@ -1,7 +1,7 @@
 {
   "name": "create-r3f",
   "version": "1.0.0",
-  "description": "",
+  "description": "A CLI tool to quickly scaffold a new React Three Fiber project. Helping you to dive right into your next 3D endeavour!",
   "bin": {
     "create-r3f": "index.js"
   },
@@ -9,6 +9,10 @@
   "author": "Kristian Payne",
   "license": "MIT",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kristianpayne1/create-r3f"
+  },
   "dependencies": {
     "chalk": "^5.4.1",
     "degit": "^2.8.4",
