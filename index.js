@@ -46,7 +46,7 @@ async function main() {
     fs.writeFileSync(packageJsonPath, JSON.stringify(packageData, null, 2));
 
     // Update vite.config.js
-    const viteConfigPath = path.join(projectName, "vite.config.js");
+    const viteConfigPath = path.join(projectName,`vite.config.${typescript ? "t" : "j"}s`);
     let viteConfigContent = fs.readFileSync(viteConfigPath, "utf-8");
 
     viteConfigContent = viteConfigContent.replace(
