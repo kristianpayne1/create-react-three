@@ -10,16 +10,27 @@ import path from "path";
 async function main() {
     console.log(chalk.cyan("Creating a new R3F project"));
 
-    // Ask for project name
-    const response = await prompts({
+    const projectNameResponse = await prompts({
         type: "text",
         name: "name",
         message: "Project name?",
         initial: "my-r3f-app",
     });
 
-    const projectName = response.name.trim();
-    const repo = "kristianpayne1/r3f-template"; // Replace with your GitHub repo
+    const languageResponse = await prompts({
+        type: "select",
+        name: "language",
+        message: "What language would you like?",
+        choices: [
+            {title: "JavaScript", value: "javascript"},
+            {title: "TypeScript", value: "typescript"}
+        ],
+        initial: 0,
+    });
+
+    const projectName = projectNameResponse.name.trim();
+    const typescript = languageResponse.language === "typescript";
+    const repo = `kristianpayne1/r3f-template${typescript ? "-typescript" : ""}`;
 
     console.log(chalk.green(`Creating R3F project "${projectName}"...`));
 
